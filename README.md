@@ -17,4 +17,4 @@ features that are unique to each one.
 https://age-of-empires-2-api.herokuapp.com/docs/#/
 
 ## Component Hierarchy
-![hierarchy](img/project2Hierarchy.png)
+![hierarchy](img/project2Hierarchy2.png)
