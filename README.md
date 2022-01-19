@@ -4,7 +4,7 @@ Using and API for the game Age of Empires 2, I will make a site that lists all o
 features that are unique to each one.
 
 ## Wireframes
-
+![wireframe](img/project2.png)
 **MVP User Stories**
   - User should be able to see cards with each civilization on main page
   - User should be able to click on any card and it should expand with more details
@@ -17,3 +17,4 @@ features that are unique to each one.
 https://age-of-empires-2-api.herokuapp.com/docs/#/
 
 ## Component Hierarchy
+![hierarchy](img/project2Hierarchy.png)
