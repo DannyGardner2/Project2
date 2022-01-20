@@ -3,6 +3,9 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Search from './components/Search';
 import Results from './components/Results';
+import { Route, Routes } from 'react-router-dom';
+import Empty from './components/Empty';
+import CivDetails from './components/CivDetails';
 
 
 // const API = "https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations"
@@ -24,7 +27,12 @@ function App() {
       <div>
       <Search civs={civs}/>
       </div>
-      <Results civs={civs}/>
+      <Routes>
+        <Route path="/" element={<Empty />} />
+        <Route path="/civ" element={<Results civs={civs} />} />
+        <Route path="/civdetails/:id" element={<CivDetails civs={civs} />} />
+      </Routes>
+      {/* <Results civs={civs}/> */}
     </div>
   );
 }

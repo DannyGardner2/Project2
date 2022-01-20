@@ -4,7 +4,7 @@ function Search(props) {
 
     return (
         <div className="search" >
-            <form onSubmit={props.civs}>
+            <form>
                 <input type="text" name="civName"></input>
                 <button>Search</button>
             </form>
@@ -12,3 +12,5 @@ function Search(props) {
     )
 }
 export default Search;
+
+{/* <form onSubmit={props.civs}> */}

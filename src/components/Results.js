@@ -7,6 +7,7 @@ function Results(props) {
           {props.civs.map(civ => {
               return (
                   <Card
+                  id={civ.id}
                   name={civ.name}
                   expansion={civ.expansion}
                   type={civ.army_type}
