@@ -1,12 +1,12 @@
 import React from 'react';
 
-function CivDetails(props) {
+function GameDetails(props) {
     return (
         <div>
-        {props.civs.map(civ => {
+        {props.games.map(game => {
             return (
                 <div>
-                <div>{civ.name}</div>
+                <div>{game.name}</div>
                 </div>
             )
         })}
@@ -14,4 +14,4 @@ function CivDetails(props) {
     )
 }
 
-export default CivDetails
+export default GameDetails

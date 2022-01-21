@@ -4,13 +4,13 @@ import Card from "./Card"
 function Results(props) {
     return (
       <div className='results-container'>
-          {props.civs.map(civ => {
+          {props.games.map(game => {
               return (
                   <Card
-                  id={civ.id}
-                  name={civ.name}
-                  expansion={civ.expansion}
-                  type={civ.army_type}
+                  id={game.id}
+                  name={game.title}
+                  expansion={game.expansion}
+                  type={game.army_type}
                   />
               )
           })}

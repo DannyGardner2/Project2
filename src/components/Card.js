@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Card(civ) {
+function Card(game) {
     return (
         <div className='card-container'>
             <div>
-                <p className='civ-name'>{civ.name}</p>
-                <p className='civ-type'>{civ.type}</p>
-                <p className='civ-expansion'>{civ.expansion}</p>
-                <Link to={`/civdetails/${civ.id}`} key={civ.id}>
+                <p className='game-name'>{game.name}</p>
+                <Link to={`/civdetails/${game.id}`} key={game.id}>
                 <button className='info-link'>More Info</button>
                 </Link>
             </div>
