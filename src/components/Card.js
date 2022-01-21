@@ -6,7 +6,7 @@ function Card(game) {
         <div className='card-container'>
             <div>
                 <p className='game-name'>{game.name}</p>
-                <Link to={`/civdetails/${game.id}`} key={game.id}>
+                <Link to={`/games/${game.id}`} key={game.id}>
                 <button className='info-link'>More Info</button>
                 </Link>
             </div>

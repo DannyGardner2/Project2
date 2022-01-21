@@ -86,3 +86,17 @@ nav .wrapper {
   padding: 0 0 0 15px;
   font-weight: 400;
 }
+
+.results-container {
+  display: block;
+  background-color: aqua;
+  margin: 0 auto;
+  width: 900px;
+}
+
+.card-container {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: brown;
+}

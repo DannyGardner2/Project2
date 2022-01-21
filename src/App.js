@@ -9,12 +9,13 @@ import GameDetails from './components/GameDetails';
 function App() {
   const [games, setGames] = useState([])
   const url = "https://www.freetogame.com/api/games"
+  const key = process.env.REACT_APP_KEY
   useEffect(()=> {
     fetch("https://free-to-play-games-database.p.rapidapi.com/api/games?sort-by=alphabetical", {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
-        "x-rapidapi-key": "cee1cf7f77mshd2fc03f83c8253bp155e54jsn3d63e510da99"
+        "x-rapidapi-key": `${key}`
       }
     })
     .then((res) => res.json())

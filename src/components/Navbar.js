@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Navbar(props) {
+export default function Navbar() {
     return (
 
         <nav>
             <div className='wrapper'>
-                <div className="logo"><a href="#">F2P</a></div>
+            <Link to={'/'}><div className="logo"><a>F2P</a></div></Link>
                 <ul className='nav-links'>
-                    <li><Link to={'/'}><a>menu1</a></Link>
+                    <li><a>menu1</a>
                         <ul className="drop-menu">
                             <li> <Link to={'/games'}><a>Games</a></Link></li>
                             <li><a href="#">Games</a></li>
