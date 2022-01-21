@@ -1,23 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+export default function Navbar(props) {
     return (
-        <div className='nav-container'>
-            <div className='title-container'>
-                <Link to={'/'}>
-                <h1>Age of Empires</h1>
-                </Link>
-            </div>
-            <nav className='navigation'>
-                <Link to={'/civ'}>
+        <div className='navigation'>
+            <div className='dropdown'>
                 <div className='nav-item'>Civilizations</div>
-                
-                </Link>
+                <div className='dropdown-civ'>
+
+                {props.civs.map(civ => {
+                    return (
+                        <div>
+                            {civ.name}
+                        </div>
+                    )
+                })}
+                </div>
+            </div>
+
+            <div className='dropdown'>
                 <div className='nav-item'>Units</div>
+            </div>
+            
+            <div className='dropdown'>
                 <div className='nav-item'>Technology</div>
+            </div>
+
+            <div className='dropdown'>
                 <div className='nav-item'>Structures</div>
-            </nav>
+            </div>
+
+
         </div>
     )
 }
+
+
+{/* </Link> */ }
+
+{/* <Link to={'/civ'}> */ }
