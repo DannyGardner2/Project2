@@ -7,6 +7,7 @@ function Results(props) {
           {props.games.map(game => {
               return (
                   <Card
+                  key={game.id}
                   id={game.id}
                   name={game.title}
                   thumbnail={game.thumbnail}

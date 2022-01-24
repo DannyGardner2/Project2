@@ -6,12 +6,12 @@ function Sidebar() {
     <div className='sidebar-container'>
             <h1>Categories</h1>
         <ul className='categories'>
-            {/* <li><a>mmorpg</a></li> */}
-            {/* <li><a>shooter</a></li> */}
-            {/* <li><a>strategy</a></li> */}
-            {/* <li><a>moba</a></li> */}
+            {/* <li>mmorpg</li> */}
+            {/* <li>shooter</li> */}
+            {/* <li>strategy</li> */}
+            {/* <li>moba</li> */}
            <li> <Link to={'/results'}>racing</Link></li>
-            {/* <li><a>sports</a></li> */}
+            {/* <li>sports</li> */}
             <li>social</li>
             <li>sandbox</li>
             {/* <li>open-world</li> */}

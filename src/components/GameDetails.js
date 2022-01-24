@@ -4,39 +4,54 @@ import { useParams } from 'react-router-dom';
 
 
 function GameDetails(props) {
-    const {id} = useParams([])
+    const { id } = useParams([])
+    const [gameInfo, setGameInfo] = useState([])
+    const key = process.env.REACT_APP_GAMES_KEY
     const categories = {
         key: process.env.REACT_APP_GAMES_KEY,
-        api: 'https://free-to-play-games-database.p.rapidapi.com/api/games?category=racing' + id,
-      }
-      const url = `${categories.api}`
-      const [games, setGames] = useState([])
-      const key = process.env.REACT_APP_GAMES_KEY
-      useEffect(()=> {
+        api: `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`
+    }
+    const url = `${categories.api}`
+    useEffect(() => {
         fetch(url, {
-          
-          "method": "GET",
-          "headers": {
-            "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
-            "x-rapidapi-key": `${key}`
-          }
+
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
+                "x-rapidapi-key": `${key}`
+            }
         })
-        .then((res) => res.json())
-        .then((res) => {
-          setGames(res)
-        })
-      }, [])
+            .then((res) => res.json())
+            .then((res) => {
+                setGameInfo(res)
+            })
+    }, [])
+    console.log(gameInfo)
     return (
         <div className='info-container'>
-        {props.games.map(game => {
-            return (
-                <div>
-                <div>{game.title}asdasd</div>
+            <div className='image'>
+                <img src={gameInfo.thumbnail} alt={gameInfo.title} />
+                <div className='details'>
+                    <h1>{gameInfo.title}</h1>
+                    <h2>{gameInfo.developer}</h2>
+                    <h3>{gameInfo.short_description}</h3>
+                    <p>{gameInfo.genre}</p>
+                    <p>{gameInfo.game_url}</p>
+                    <img src={gameInfo.screenshots} alt={gameInfo.title} />
                 </div>
-            )
-        })}
+            </div>
         </div>
     )
 }
 
 export default GameDetails
+
+{/* <div className='info-container'>
+{gameInfo.map(game => {
+    return (
+        <div>
+            <div>{game.title}asdasd</div>
+        </div>
+    )
+})}
+</div> */}

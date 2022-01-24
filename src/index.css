@@ -167,10 +167,19 @@ nav .wrapper {
 }
 
 .info-container {
+  color: white;
   width: 800px;
-  height: 500px;
   margin-left: 200px;
   margin-top: 65px;
-  background-color: antiquewhite;
+  background-color: rgb(63, 63, 63);
   display: inline-block;
+}
+
+.info-container img {
+  width: 100%
+}
+
+.details {
+  margin: 20px;
+  text-align: center;
 }

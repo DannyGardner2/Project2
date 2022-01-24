@@ -6,11 +6,11 @@ export default function Navbar() {
 
         <nav>
             <div className='wrapper'>
-            <Link to={'/'}><div className="logo"><a>F2P</a></div></Link>
+            <Link to={'/'}><div className="logo">F2P</div></Link>
                 <ul className='nav-links'>
                     <li><a>menu1</a>
                         <ul className="drop-menu">
-                            <li> <Link to={'/games'}><a>Games</a></Link></li>
+                            <li> <Link to={'/games'}>Games</Link></li>
                             <li><a href="#">Games</a></li>
                             <li><a href="#">Games</a></li>
                         </ul>
