@@ -1,5 +1,14 @@
 import React from 'react';
+import Featured from './Featured';
 
-export default function Empty() {
-  return <div>test</div>;
+function Empty() {
+  return (
+    <div className='main'>
+      {/* <Featured /> */}
+
+    </div>
+
+  )
 }
+
+export default Empty

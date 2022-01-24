@@ -9,8 +9,9 @@ function Results(props) {
                   <Card
                   id={game.id}
                   name={game.title}
-                  expansion={game.expansion}
-                  type={game.army_type}
+                  thumbnail={game.thumbnail}
+                  genre={game.genre}
+                  platform={game.platform}
                   />
               )
           })}

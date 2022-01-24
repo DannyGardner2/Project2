@@ -5,13 +5,20 @@ import Results from './components/Results';
 import { Route, Routes } from 'react-router-dom';
 import Empty from './components/Empty';
 import GameDetails from './components/GameDetails';
+import Sidebar from './components/Sidebar';
+import Featured from './components/Featured';
 
 function App() {
+  const categories = {
+    key: process.env.REACT_APP_GAMES_KEY,
+    api: 'https://free-to-play-games-database.p.rapidapi.com/api/games?category=racing',
+    endpoint: '/'
+  }
+  const url = `${categories.api}`
   const [games, setGames] = useState([])
-  const url = "https://www.freetogame.com/api/games"
   const key = process.env.REACT_APP_KEY
   useEffect(()=> {
-    fetch("https://free-to-play-games-database.p.rapidapi.com/api/games?sort-by=alphabetical", {
+    fetch(url, {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
@@ -28,13 +35,14 @@ function App() {
     <div className="App">
       {/* <Header /> */}
       <Navbar games={games}/>
+      <Sidebar />
       {/* <div>
       <Search games={games}/>
       </div> */}
       <Routes>
         <Route path="/" element={<Empty />} />
-        <Route path="/games" element={<Results games={games} />} />
-        <Route path="/games/:id" element={<GameDetails games={games} />} />
+        <Route path="/results" element={<Results games={games} />} />
+        {/* <Route path="/games/:id" element={<GameDetails games={games} />} /> */}
       </Routes>
       {/* <Results civs={civs}/> */}
     </div>

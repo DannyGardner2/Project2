@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom';
 
 function Card(game) {
     return (
-        <div className='card-container'>
-            <div>
-                <p className='game-name'>{game.name}</p>
-                <Link to={`/games/${game.id}`} key={game.id}>
-                <button className='info-link'>More Info</button>
-                </Link>
+        <Link to={`/games/${game.id}`} key={game.id}>
+            <div className='card-container'>
+                <div>
+                    <img src={game.thumbnail} alt={game.title}/>
+                    <p className='game-name'>{game.name}</p>
+                    <p className='game-genre'>{game.genre}</p>
+                    <p className='game-platform'>{game.platform}</p>
+                </div>
             </div>
-        </div>
+        </Link>
     )
 }
 
