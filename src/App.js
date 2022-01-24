@@ -16,9 +16,10 @@ function App() {
   }
   const url = `${categories.api}`
   const [games, setGames] = useState([])
-  const key = process.env.REACT_APP_KEY
+  const key = process.env.REACT_APP_GAMES_KEY
   useEffect(()=> {
     fetch(url, {
+      
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
@@ -42,7 +43,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Empty />} />
         <Route path="/results" element={<Results games={games} />} />
-        {/* <Route path="/games/:id" element={<GameDetails games={games} />} /> */}
+        <Route path="/games/:id" element={<GameDetails games={games} />} />
       </Routes>
       {/* <Results civs={civs}/> */}
     </div>

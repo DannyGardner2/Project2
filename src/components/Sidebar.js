@@ -4,53 +4,53 @@ import { Link } from 'react-router-dom';
 function Sidebar() {
   return (
     <div className='sidebar-container'>
-        <ul className='categories'>
             <h1>Categories</h1>
+        <ul className='categories'>
             {/* <li><a>mmorpg</a></li> */}
             {/* <li><a>shooter</a></li> */}
             {/* <li><a>strategy</a></li> */}
             {/* <li><a>moba</a></li> */}
-           <li> <Link to={'/results'}><a href='#'>racing</a></Link></li>
+           <li> <Link to={'/results'}>racing</Link></li>
             {/* <li><a>sports</a></li> */}
-            <li><a>social</a></li>
-            <li><a>sandbox</a></li>
-            {/* <li><a>open-world</a></li> */}
-            <li><a>survival</a></li>
-            {/* <li><a>pvp</a></li> */}
-            {/* <li><a>pve</a></li> */}
-            {/* <li><a>pixel</a></li> */}
-            {/* <li><a>voxel</a></li> */}
-            {/* <li><a>zombie</a></li> */}
-            {/* <li><a>turn-based</a></li> */}
-            <li><a>first-person</a></li>
-            {/* <li><a>third-Person</a></li> */}
-            {/* <li><a>top-down</a></li> */}
-            {/* <li><a>tank</a></li> */}
-            {/* <li><a>space</a></li> */}
-            <li><a>sailing</a></li>
-            {/* <li><a>side-scroller</a></li> */}
-            {/* <li><a>superhero</a></li> */}
-            {/* <li><a>permadeath</a></li> */}
-            {/* <li><a>card</a></li> */}
-            {/* <li><a>battle-royale</a></li> */}
-            <li><a>mmo</a></li>
-            {/* <li><a>mmofps</a></li> */}
-            {/* <li><a>mmotps</a></li> */}
-            {/* <li><a>3d</a></li> */}
-            {/* <li><a>2d</a></li> */}
-            {/* <li><a>fantasy</a></li> */}
-            <li><a>sci-fi</a></li>
-            {/* <li><a>fighting</a></li> */}
-            {/* <li><a>action-rpg</a></li> */}
-            {/* <li><a>action</a></li> */}
-            {/* <li><a>anime</a></li> */}
-            {/* <li><a>military</a></li> */}
-            {/* <li><a>martial-arts</a></li> */}
-            {/* <li><a>flight</a></li> */}
-            {/* <li><a>low-spec</a></li> */}
-            <li><a>tower-defense</a></li>
-            {/* <li><a>horror</a></li> */}
-            {/* <li><a>mmorts</a></li> */}
+            <li>social</li>
+            <li>sandbox</li>
+            {/* <li>open-world</li> */}
+            <li>survival</li>
+            {/* <li>pvp</li> */}
+            {/* <li>pve</li> */}
+            {/* <li>pixel</li> */}
+            {/* <li>voxel</li> */}
+            {/* <li>zombie</li> */}
+            {/* <li>turn-based</li> */}
+            <li>first-person</li>
+            {/* <li>third-Person</li> */}
+            {/* <li>top-down</li> */}
+            {/* <li>tank</li> */}
+            {/* <li>space</li> */}
+            <li>sailing</li>
+            {/* <li>side-scroller</li> */}
+            {/* <li>superhero</li> */}
+            {/* <li>permadeath</li> */}
+            {/* <li>card</li> */}
+            {/* <li>battle-royale</li> */}
+            <li>mmo</li>
+            {/* <li>mmofps</li> */}
+            {/* <li>mmotps</li> */}
+            {/* <li>3d</li> */}
+            {/* <li>2d</li> */}
+            {/* <li>fantasy</li> */}
+            <li>sci-fi</li>
+            {/* <li>fighting</li> */}
+            {/* <li>action-rpg</li> */}
+            {/* <li>action</li> */}
+            {/* <li>anime</li> */}
+            {/* <li>military</li> */}
+            {/* <li>martial-arts</li> */}
+            {/* <li>flight</li> */}
+            {/* <li>low-spec</li> */}
+            <li>tower-defense</li>
+            {/* <li>horror</li> */}
+            {/* <li>mmorts</li> */}
         </ul>
     </div>
 
