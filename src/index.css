@@ -13,10 +13,6 @@ body {
   background-color: rgb(41, 41, 41);
 }
 
-.App {
-  /* text-align: center; */
-}
-
 .about-container {
   display: inline-block;
   width: 500px;
