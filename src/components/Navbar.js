@@ -6,13 +6,19 @@ export default function Navbar() {
 
         <nav>
             <div className='wrapper'>
-            <Link to={'/'}><div className="logo">F2P</div></Link>
+                <Link to={'/'}><div className="logo">F2P</div></Link>
                 <ul className='nav-links'>
-                    <li><a>menu1</a>
+                    <li><a>Categories</a>
                         <ul className="drop-menu">
-                            <li> <Link to={'/games'}>Games</Link></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Games</a></li>
+                            <li><Link to={'/results/racing'} value="racing">Racing</Link></li>
+                            <li><Link to={'/results/social'} value="social">Social</Link></li>
+                            <li><Link to={'/results/sandbox'} value="social">Sandbox</Link></li>
+                            <li><Link to={'/results/survival'} value="social">Survival</Link></li>
+                            <li><Link to={'/results/first-person'} value="social">First-person</Link></li>
+                            <li><Link to={'/results/sailing'} value="social">Sailing</Link></li>
+                            <li><Link to={'/results/mmo'} value="social">Mmo</Link></li>
+                            <li><Link to={'/results/sci-fi'} value="social">Sci-fi</Link></li>
+                            <li><Link to={'/results/tower-defense'} value="social">Tower-defense</Link></li>
                         </ul>
                     </li>
                     <li><Link to={'/about'}><a>About</a></Link></li>

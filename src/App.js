@@ -10,11 +10,10 @@ import Featured from './components/Featured';
 import About from './components/About';
 
 function App() {
-  const [ genre, setGenre ] = useState('?category=social')
   const [games, setGames] = useState([])
   const categories = {
     key: process.env.REACT_APP_GAMES_KEY,
-    api: `https://free-to-play-games-database.p.rapidapi.com/api/games${genre}`,
+    api: `https://free-to-play-games-database.p.rapidapi.com/api/games`,
     endpoint: '/'
   }
   const url = `${categories.api}`
@@ -32,28 +31,21 @@ function App() {
       .then((res) => {
         setGames(res)
       })
-  }, [genre])
-
-  function handleChange(e) {
-    e.preventDefault()
-    setGenre(e.target.value);
-    console.log(e.target.value)
-  }
+  }, [])
 
   return (
     <div className="App">
       <Navbar games={games} />
-      <Sidebar
-        handleChange={handleChange}
-      />
-
-      <Routes>
-        <Route path="/" element={<Empty />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/results/:genre" element={<Results games={games} />} />
-        <Route path="/games/:id" element={<GameDetails games={games} />} />
-      </Routes>
-    </div>
+      {/* <Sidebar /> */}
+      <div className='main'>
+        <Routes>
+          <Route path="/" element={<Empty />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/results/:genre" element={<Results games={games} />} />
+          <Route path="/games/:id" element={<GameDetails games={games} />} />
+        </Routes>
+      </div>
+    </div >
   );
 }
 
