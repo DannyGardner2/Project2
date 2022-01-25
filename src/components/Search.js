@@ -12,5 +12,3 @@ function Search(props) {
     )
 }
 export default Search;
-
-{/* <form onSubmit={props.civs}> */}

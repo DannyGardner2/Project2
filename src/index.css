@@ -4,8 +4,6 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
 }
 
@@ -17,20 +15,7 @@
 body {
   background-color: rgb(41, 41, 41);
 }
-
-.about-container {
-  display: inline-block;
-  width: 500px;
-  height: 500px;
-  margin-left: 245px;
-  margin-top: 75px;
-  color: rgb(255, 255, 255);
-}
-
-.about-container a {
-  color: rgb(192, 191, 255);
-}
-
+/* Header */
 .header-container a {
   color: white;
   background-color: black;
@@ -40,6 +25,15 @@ body {
   position: absolute;
 }
 
+.logo {
+  color: rgb(91, 30, 141);
+  text-decoration: none;
+  font-size: 47px;
+  font-weight: 600;
+  border: 1px solid;
+}
+
+/* Navigation */
 nav{
   background-color: #000000;
   position: fixed;
@@ -50,7 +44,7 @@ nav{
 }
 
 nav .wrapper {
-  max-width: 1200px;
+  max-width: 1100px;
   padding: 0 30px;
   margin: auto;
   display: flex;
@@ -58,14 +52,6 @@ nav .wrapper {
   justify-content: space-between;
 }
 
-.logo {
-  color: rgb(91, 30, 141);
-  text-decoration: none;
-  font-size: 47px;
-  font-weight: 600;
-  border: 1px solid;
-  background-color: honeydew;
-}
 .wrapper .nav-links{
   display: inline-flex;
 }
@@ -107,7 +93,7 @@ nav .wrapper {
   opacity: .95;
   visibility: visible;
 }
-
+/* Results Page */
 .results-container {
   display: flex;
   flex-wrap: wrap;
@@ -121,6 +107,7 @@ nav .wrapper {
   color: white;
 }
 
+/* Individual Cards */
 .card-container {
   width: 200px;
   height: 180px;
@@ -128,7 +115,6 @@ nav .wrapper {
   margin-left: 10px;
   margin-top: 10px;
   text-align: center;
-
 }
 
 .card-container:hover {
@@ -145,54 +131,26 @@ nav .wrapper {
   width: 200px;
 }
 
-
 .game-genre, .game-platform {
   color: rgb(196, 196, 196);
   font-size: 11px;
   display: inline;
 }
 
-.game-platform {
-}
-
-.sidebar-container {
-  position: fixed;
-  width: 200px;
-  height: 100%;
-  background-color: rgb(91, 30, 141);
-  top: 64px;
-}
-
+/* Featured Page */
 .featured-container {
-  width:800px;
-  height: 400px;
-  display: inline-block;
-  background-color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(41, 41, 41);
+  margin: 0 auto;
+  padding-top: 80px;
 }
 
-.categories li {
-  color: white;
-  line-height: 40px;
-  font-size: 20px;
-  text-align: left;
-  margin-left: 20px;
-  list-style: none;
-}
-
-.categories a {
-  color:white;
-}
-
-.categories a:hover {
-  color:white;
-  background-color: black;
-}
-
+/* Game Info Page */
 .info-container {
   color: white;
   width: 800px;
-  margin-left: 300px;
-  margin-top: 125px;
+  margin-top: 115px;
   background-color: rgb(63, 63, 63);
   display: inline-block;
 }
@@ -213,4 +171,17 @@ nav .wrapper {
 
 .details h1{
   font-size: 40px;
+}
+
+/* About Page */
+.about-container {
+  display: inline-block;
+  margin-top: 75px;
+  padding: 0px 150px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.about-container a {
+  color: rgb(192, 191, 255);
 }

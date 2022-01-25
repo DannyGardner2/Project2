@@ -4,7 +4,7 @@ import Featured from './Featured';
 function Empty() {
   return (
     <div className='main'>
-      {/* <Featured /> */}
+      <Featured />
 
     </div>
 

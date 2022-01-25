@@ -43,13 +43,3 @@ function GameDetails() {
 }
 
 export default GameDetails
-
-{/* <div className='info-container'>
-{gameInfo.map(game => {
-    return (
-        <div>
-            <div>{game.title}asdasd</div>
-        </div>
-    )
-})}
-</div> */}

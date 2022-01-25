@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 import Navbar from './components/Navbar';
 import Results from './components/Results';
 import { Route, Routes } from 'react-router-dom';
 import Empty from './components/Empty';
 import GameDetails from './components/GameDetails';
-import Sidebar from './components/Sidebar';
 import Featured from './components/Featured';
 import About from './components/About';
 
@@ -35,8 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar games={games} />
-      {/* <Sidebar /> */}
+      <Navbar />
       <div className='main'>
         <Routes>
           <Route path="/" element={<Empty />} />

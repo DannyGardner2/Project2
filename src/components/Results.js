@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from "react";
 
 
-function Results(props) {
+function Results() {
   const [category, setCategory] = useState()
   let genre = useParams().genre
   const key = process.env.REACT_APP_GAMES_KEY

@@ -21,7 +21,7 @@ export default function Navbar() {
                             <li><Link to={'/results/tower-defense'} value="social">Tower-defense</Link></li>
                         </ul>
                     </li>
-                    <li><Link to={'/about'}><a>About</a></Link></li>
+                    <li><Link to={'/about'}>About</Link></li>
                 </ul>
             </div>
         </nav>
@@ -30,18 +30,3 @@ export default function Navbar() {
 
     )
 }
-
-
-// {props.games.map(game => {
-//     return (
-//         <div>
-//             <ul className="drop-menu">
-//                 <li><a href="#">{game.title}</a></li>
-//             </ul>
-//         </div>
-//     )
-// })}
-
-{/* </Link> */ }
-
-{/* <Link to={'/civ'}> */ }
