@@ -7,6 +7,7 @@ import Empty from './components/Empty';
 import GameDetails from './components/GameDetails';
 import Sidebar from './components/Sidebar';
 import Featured from './components/Featured';
+import About from './components/About';
 
 function App() {
   const [ genre, setGenre ] = useState('?category=social')
@@ -48,6 +49,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Empty />} />
+        <Route path="/about" element={<About />} />
         <Route path="/results/:genre" element={<Results games={games} />} />
         <Route path="/games/:id" element={<GameDetails games={games} />} />
       </Routes>

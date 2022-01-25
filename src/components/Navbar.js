@@ -15,9 +15,7 @@ export default function Navbar() {
                             <li><a href="#">Games</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">menu2</a></li>
-                    <li><a href="#">menu3</a></li>
-                    <li><a href="#">menu4</a></li>
+                    <li><Link to={'/about'}><a>About</a></Link></li>
                 </ul>
             </div>
         </nav>

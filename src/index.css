@@ -17,6 +17,19 @@ body {
   /* text-align: center; */
 }
 
+.about-container {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  margin-left: 245px;
+  margin-top: 75px;
+  color: rgb(255, 255, 255);
+}
+
+.about-container a {
+  color: rgb(192, 191, 255);
+}
+
 .header-container a {
   color: white;
   /* width: 100px; */
