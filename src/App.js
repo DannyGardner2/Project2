@@ -4,7 +4,6 @@ import Results from './components/Results';
 import { Route, Routes } from 'react-router-dom';
 import Empty from './components/Empty';
 import GameDetails from './components/GameDetails';
-import Featured from './components/Featured';
 import About from './components/About';
 
 function App() {
