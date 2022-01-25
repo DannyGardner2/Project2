@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 
-function GameDetails(props) {
+function GameDetails() {
     const { id } = useParams([])
     const [gameInfo, setGameInfo] = useState([])
     const key = process.env.REACT_APP_GAMES_KEY
@@ -26,7 +26,6 @@ function GameDetails(props) {
                 setGameInfo(res)
             })
     }, [])
-    console.log(gameInfo)
     return (
         <div className='info-container'>
             <div className='image'>
@@ -36,8 +35,7 @@ function GameDetails(props) {
                     <h2>{gameInfo.developer}</h2>
                     <h3>{gameInfo.short_description}</h3>
                     <p>{gameInfo.genre}</p>
-                    <p>{gameInfo.game_url}</p>
-                    <img src={gameInfo.screenshots} alt={gameInfo.title} />
+                    <p><a href={gameInfo.game_url}>{gameInfo.game_url}</a></p>
                 </div>
             </div>
         </div>
