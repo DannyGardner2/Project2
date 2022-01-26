@@ -1,7 +1,6 @@
 # Project 2 Proposal
 ## Description
-Using and API for the game Age of Empires 2, I will make a site that lists all of the civilizations you can play, and when you click on them, you will get details about the
-features that are unique to each one.
+Using and API from https://www.freetogame.com/api-doc , I will make a site that lists free to play games, and when you click on them, you will get details about the game.
 
 ## Wireframes
 ![wireframe](src/img/project2.png)
